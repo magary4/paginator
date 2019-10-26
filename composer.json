@@ -1,0 +1,32 @@
+{
+  "name": "rvadym/paginator",
+  "description": "Paginator domain",
+  "license": "",
+  "type": "package",
+  "require": {
+    "php": "^7.3",
+    "rvadym/types": "@stable"
+  },
+  "require-dev": {
+    "phan/phan": "@stable",
+    "phpunit/php-code-coverage": "^7.0",
+    "phpunit/phpunit": "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rvadym\\Paginator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Rvadym\\Paginator\\": "tests/"
+    }
+  },
+  "scripts": {},
+  "config": {
+    "preferred-install": "source",
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
