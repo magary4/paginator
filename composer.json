@@ -30,6 +30,12 @@
     "preferred-install": "source",
     "bin-dir": "bin"
   },
+  "repositories":[
+    {
+      "type": "vcs",
+      "url": "git@github.com:rvadym/types.git"
+    }
+  ],
   "minimum-stability": "dev",
   "prefer-stable": true
 }
