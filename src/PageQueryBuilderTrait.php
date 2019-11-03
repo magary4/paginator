@@ -26,11 +26,11 @@ trait PageQueryBuilderTrait
         $data = $request->getQueryParams();
 
         $offsetValue = $this->filterLessThanZero(
-            $this->filterInt($data['offset'] ?? $defaultOffset)
+            $this->filterInt($data['offset'] ?? $defaultOffset) ?? 0
         ) ?? $defaultOffset;
 
         $limitValue = $this->filterLessThanZero(
-            $this->filterInt($data['limit'] ?? $defaultLimit)
+            $this->filterInt($data['limit'] ?? $defaultLimit) ?? 0
         ) ?? $defaultLimit;
 
         return new PageQuery(

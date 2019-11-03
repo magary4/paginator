@@ -5,7 +5,8 @@
   "type": "package",
   "require": {
     "php": "^7.3",
-    "rvadym/types": "@stable"
+    "rvadym/types": "@stable",
+    "psr/http-message": "^1.0"
   },
   "require-dev": {
     "phan/phan": "@stable",
